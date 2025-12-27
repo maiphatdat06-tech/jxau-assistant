@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-// 处理“我的收藏”点击
+
 const handleCollect = () => {
 	uni.showToast({
 		title: '功能开发中...',
@@ -37,18 +37,18 @@ const handleCollect = () => {
 	});
 };
 
-// 处理“反馈建议”点击：使用更正式的弹窗
+
 const handleFeedback = () => {
 	uni.showModal({
 		title: '反馈建议',
 		content: '感谢您的关注！请将建议发送至校内邮箱：jxau_support@edu.cn',
-		showCancel: false, // 不显示取消按钮
+		showCancel: false,
 		confirmText: '我知道了',
-		confirmColor: '#2d6a4f' // 使用你的江农绿主题色
+		confirmColor: '#2d6a4f' 
 	});
 };
 
-// 处理“版本信息”点击
+
 const handleVersion = () => {
 	uni.showModal({
 		title: '关于项目',

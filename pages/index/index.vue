@@ -33,38 +33,35 @@
 <script setup>
 import { ref } from 'vue';
 
-// 2. 数据源：在这里为每条新闻指定不同的图片路径
+// 在这里为每条新闻指定不同的图片路径
 const newsList = ref([
 	{ 
 		id: 1, 
 		title: '江西农业大学 120 周年校庆筹备工作启动', 
 		date: '2025-12-25',
-		// 确保 static 文件夹里有 news1.png
 		cover: '/static/new1.png' 
 	},
 	{ 
 		id: 2, 
 		title: '关于 23 级数字媒体技术专业实训通知', 
 		date: '2025-12-24',
-		// 这里用 news2.png
 		cover: '/static/new2.png' 
 	},
 	{ 
 		id: 3, 
 		title: '本周教学区空教室开放情况汇总', 
 		date: '2025-12-23',
-		// 为了演示，这里重复用 news1.png，你可以放更多不同的图
 		cover: '/static/new1.png' 
 	}
 ]);
 // 定义轮播图数组，方便后续增加或减少图片
 const banners = ref([
-  { id: 1, url: '/static/banner1.png' }, // 这是你现在的 120 周年校庆图
-  { id: 2, url: '/static/banner2.jpg' }, // 增加第二张
-  { id: 3, url: '/static/banner3.jpg' }  // 增加第三张
+  { id: 1, url: '/static/banner1.png' },  
+  { id: 2, url: '/static/banner2.jpg' }, 
+  { id: 3, url: '/static/banner3.jpg' }  
 ]);
 
-// 处理“我的收藏”点击
+
 const handleCollect = () => {
 	uni.showToast({
 		title: '功能开发中...',
